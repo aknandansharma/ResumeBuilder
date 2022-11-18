@@ -69,12 +69,29 @@ function generateCV(){
     document.getElementById("objectiveField").value;
 
   // Work exp
-  let wes = document.getElementById('weField')
+  let wes = document.getElementsByClassName("weField");
   let str = "";
   for(let e of wes){
     str = str + `<li> ${e.value} </li>`;
   }
-  document.getElementById('weT').innerHTML = str;
+  document.getElementById("weT").innerHTML = str;
+
+  // Qualafication
+  let aqs = document.getElementsByClassName("aeField");
+  let strr = "";
+  for (let e of aqs) {
+    strr = strr + `<li> ${e.value} </li>`;
+  }
+  document.getElementById("aqT").innerHTML = strr;
 
 
+
+  // Genrating the cv
+  document.getElementById("cv-form").style.display = "none"
+  document.getElementById("cv-template").style.display = "block";
+
+}
+
+function printCV() {
+  window.print();
 }

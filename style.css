@@ -1,3 +1,7 @@
+#cv-template{
+    display: none;
+}
+
 /* #cv-form{
     display: none;
 } */
@@ -23,3 +27,5 @@ i{
 .imglogo{ 
     display: inline
 }
+
+
