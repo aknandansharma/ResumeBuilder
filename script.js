@@ -33,12 +33,10 @@ function addNewAEField() {
 function generateCV(){
   console.log("Genrate CV");
 
+  // name
   let nameField = document.getElementById("nameField").value;
   let nameT1 = document.getElementById("nameT1");
   nameT1.innerHTML = nameField;
-
-  // Nmae
-  document.getElementById("nameT2").innerHTML = nameField;
 
   // contact
   document.getElementById("contactT").innerHTML =
@@ -63,6 +61,18 @@ function generateCV(){
   // linkedin
   document.getElementById("linkedT").innerHTML =
     document.getElementById("linkedField").value;
+  // skills
+  document.getElementById("skillsT").innerHTML =
+    document.getElementById("SkillsField").value;
+  // Interests
+  document.getElementById("interT").innerHTML =
+    document.getElementById("InterestsField").value;
+  // LANGUAGES
+  document.getElementById("langT").innerHTML =
+    document.getElementById("LanguagesField").value;
+  // VOLUNTEER
+  document.getElementById("volT").innerHTML =
+    document.getElementById("VolunteerField").value;
 
   // Objective
   document.getElementById("objectiveT").innerHTML =
@@ -71,7 +81,7 @@ function generateCV(){
   // Work exp
   let wes = document.getElementsByClassName("weField");
   let str = "";
-  for(let e of wes){
+  for (let e of wes) {
     str = str + `<li> ${e.value} </li>`;
   }
   document.getElementById("weT").innerHTML = str;
@@ -84,12 +94,9 @@ function generateCV(){
   }
   document.getElementById("aqT").innerHTML = strr;
 
-
-
   // Genrating the cv
-  document.getElementById("cv-form").style.display = "none"
+  document.getElementById("cv-form").style.display = "none";
   document.getElementById("cv-template").style.display = "block";
-
 }
 
 function printCV() {
