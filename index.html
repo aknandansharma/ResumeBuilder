@@ -31,6 +31,7 @@
                         <label for="nameField">Your Name</label>
                         <input type="text" id="nameField" class="form-control" placeholder="Enter Your Name.">
                     </div>
+                
                     <div class="form-group">
                         <label for="contactField">Your Contact Number</label>
                         <input type="text" id="contactField" class="form-control"
@@ -70,6 +71,27 @@
                             placeholder="Enter Your Linkdin Links.">
                     </div>
 
+                    <div class="form-group">
+                        <label for="addressField">Your Skills</label>
+                        <textarea id="SkillsField" class="form-control" placeholder="Enter Your Skills here." rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addressField">Your Interests</label>
+                        <textarea id="InterestsField" class="form-control" placeholder="Enter Your Interests here." rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addressField">Your Languages</label>
+                        <textarea id="LanguagesField" class="form-control" placeholder="Enter Your Languages here." rows="2"></textarea>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="addressField">Your Volunteer Experience</label>
+                        <textarea id="VolunteerField" class="form-control" placeholder="Enter Your Volunteer Experience here." rows="2"></textarea>
+                    </div>
+                    
 
 
                 </div>
@@ -108,6 +130,7 @@
                     </div>
                   
 
+
                    
                    
 
@@ -137,32 +160,68 @@
                       alt="profile images"
                       class="img-fluid myimg"
                       />
-                        <p id="nameT1">Aknandan Sharma</p>
-                        <p id="contactT">+91 39279790, +91 379471479</p>
-                        <p id="emailT">aknandansharma@gmail.com</p>
-                        <p id="addressT">Pokharhan, Phesar, Aurangabad, Bihar</p>
-                        
-
-                        <hr/>
+                        <div>
+                            <h4 class="Contact">CONTACT</h4>
+                            <hr>
+                            <p id="contactT" class="Contact"><span>Mobile : </span>  +91 39279790, +91 379471479</p>
+                            <p id="emailT" class="Contact"><span>Email : </span>  aknandansharma@gmail.com</p>
+                            <p id="addressT" class="Contact"><span>Addrsss : </span>  Pokharhan, Phesar, Aurangabad, Bihar</p>
+                        </div>
 
                         <p class="imglogo"><a id="webT" href="https://github.com/aknandansharma" target="_blank"><i class="fa-solid fa-link"></i></a></p>
                         <p class="imglogo"><a id="twitterT" href="https://github.com/aknandansharma" target="_blank"><i class="fa-brands fa-twitter"></i></a></p>
                         <p class="imglogo"><a id="gitT" href="https://github.com/aknandansharma" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
                         <p class="imglogo"><a id="linkedT" href="https://github.com/aknandansharma" target="_blank"><i class="fa-brands fa-github"></i></a></p>
 
-                        <hr />
+                        
+                        <div >
+                            <h4 class="Contact">SKILLS</h4>
+                            <hr>
+                            <p id="skillsT" class="Contact">JavaScript, Java, Python, HTML, CSS, C, C++, React.js, Node.js, Express.js, Redux.js. GitHub, Postman, etc.</p>
+
+                        </div>
+                        <div >
+                            <h4 class="Contact">INTERESTS</h4>
+                            <hr>
+                            <p id="interT" class="Contact">
+                                Codding, Photography, Travling, Watching Movie, Plying Cricket, Reading Books, Making new Things etc.
+                            </p>
+
+                        </div>
+                        <div >
+                            <h4 class="Contact">LANGUAGES</h4>
+                            <hr>
+                            <p id="langT" class="Contact">
+                                Hindi, English, Bangla, Punjabi. French, Kannada, Telgu, Sanskrit.
+                            </p>
+
+                        </div>
+                        <div  >
+                            <h4 class="Contact">VOLUNTEER EXPERIENCE</h4>
+                            <hr>
+                            <p id="volT" class="Contact">
+                                Gaya Book Fair College
+                                Team Lead
+                                Gaya Pitrapaksha Mela
+                                Team Lead
+                                Bodhgaya kalachakra puja
+                                Team Lead
+                            </p>
+
+                        </div>
 
 
                 </div>
 
               <!-- this is left col -->
                 <div class="col-md-8 container text-center ">
-                        <h1 id="nameT2">Aknandna kumar Sharma</h1>
+                        <h1 id="nameT1">Aknandna kumar Sharma</h1>
+                        <h3 id="positionT"></h3>
                         
                         <!-- Objective card -->
-                        <div class="card mt-4">
+                        <div class="card mt-4 Contact">
                             <div class="card-header" id="backgroundRight">
-                                <h3>Objective</h3>
+                                <h3 class="Contact">Objective</h3>
                             </div>
                             <div class="card-body">
                                 <p id="objectiveT">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore culpa molestias numquam alias, pariatur expedita commodi in minus officiis magni neque asperiores tempore, eius ut odio? Voluptatem praesentium molestiae dolor?</p>
@@ -170,9 +229,9 @@
                         </div>
 
                         <!-- Work Experience / Internship -->
-                        <div class="card mt-4 text-left">
+                        <div class="card mt-4 Contact">
                             <div class="card-header " id="backgroundRight">
-                                <h3>Work Experience / Internship</h3>
+                                <h3 class="Contact">Work Experience/Internship/Projects</h3>
                             </div>
                             <div class="card-body">
                                 <ul id="weT">
@@ -193,9 +252,9 @@
                         </div>
 
                         <!-- Acedmic Qualafiction -->
-                        <div class="card mt-4">
+                        <div class="card mt-4 Contact">
                             <div class="card-header" id="backgroundRight">
-                                <h3>Work Experience / Internship</h3>
+                                <h3 class="Contact">Academic Qualification</h3>
                             </div>
                             <div class="card-body">
                                 <ul id="aqT">
